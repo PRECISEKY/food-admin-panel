@@ -1,4 +1,11 @@
+// tsconfig.json
 {
+  "compilerOptions": { // <-- ADD THIS BLOCK
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },              // <-- END ADDED BLOCK
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
